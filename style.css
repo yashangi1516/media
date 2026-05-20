@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 18px;
+}
+
+.user-name {
+  font-size: 18px;
+  color: #0905eb;
+}
+
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  padding: 60px 40px;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.btn {
+  padding: 14px 28px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.hero-right {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+}
+
+/* -------------------------
+   TABLET VIEW (768px)
+-------------------------- */
+@media (max-width: 768px) {
+
+  /* Navbar text smaller */
+  .logo,
+  .nav-links a,
+  .user-name {
+    font-size: 16px;
+  }
+
+  /* Hero text smaller */
+  .hero-left h1 {
+    font-size: 36px;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+  }
+
+  .hero-right img {
+    max-width: 350px;
+  }
+}
+
+/* -------------------------
+   MOBILE VIEW (600px)
+-------------------------- */
+@media (max-width: 600px) {
+
+  /* Hide nav links */
+  .nav-links {
+    display: none;
+  }
+
+  /* Navbar spacing */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  /* Hero becomes column */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 30px;
+  }
+
+  .hero-right img {
+    max-width: 300px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
